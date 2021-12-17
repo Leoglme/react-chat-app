@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
 body {
   margin: 0;
   font-family: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -6,18 +10,94 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #161719;
   font-size: 15px;
-  color: #ffffff; }
+  color: #ffffff;
+  overflow: hidden; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
 .App {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh; }
 
 .layout-left, .layout-center, .layout-right {
-  height: 100%; }
+  height: 100%;
+  min-height: 100vh; }
+
+.column_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.text-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500; }
+
+.layout-right {
+  min-width: unset; }
+
+.text-white {
+  color: #ffffff; }
+
+.column_container {
+  height: 100vh;
+  padding: 32px 32px 0; }
+  .column_container.details {
+    background: #191d1e; }
+  .column_container .column_header {
+    margin-bottom: 32px; }
+
+.center, .start, .end {
+  display: flex;
+  align-items: center; }
+
+.center {
+  justify-content: center; }
+
+.start {
+  justify-content: start; }
+
+.end {
+  justify-content: flex-end; }
+
+ul {
+  list-style: none; }
+
+.avatar {
+  border-radius: 45px; }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px; }
+
+.avatar-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  background: #43a0ff; }
+
+svg.lighten path {
+  stroke: #8d9097; }
+
+.lighten {
+  color: #8d9097; }
+
+.icon-clickable {
+  flex: 1;
+  cursor: pointer; }
+  .icon-clickable:hover .lighten svg {
+    width: 22px;
+    height: 22px; }
+  .icon-clickable:hover .lighten path {
+    stroke: #ffffff; }
+
+.small {
+  font-size: 12px; }
 
 /*# sourceMappingURL=app.css.map */

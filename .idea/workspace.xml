@@ -5,20 +5,115 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b5f82e-0316-48c2-a1bd-cbac28e60107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/common/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MembersList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Spinner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-chat-app.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Activity.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/AddUser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowDown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowDownSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowLeft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowLeftSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowRight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowRightSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ArrowUpSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Bag.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Bag2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Bookmark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Buy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CallMissed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CallSilent.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Calling.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CaretDown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CaretLeft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CaretRight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CaretUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Chart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronDown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronDownCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronLeft.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronLeftCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronRight.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronRightCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ChevronUpCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/CloseSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Danger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Delete.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Discount.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Discovery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Document.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Download.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Edit.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/EditSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Filter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Filter2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Folder.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Game.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Graph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Heart2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Hide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Image2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/InfoCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/InfoSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Location.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Lock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Login.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Logout.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Message.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/MoreCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/MoreSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Notification.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Paper.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/PaperDownload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/PaperFail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/PaperNegative.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/PaperPlus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/PaperUpload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Password.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/People.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Plus.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Scan.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Send.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Setting.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ShieldDone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/ShieldFail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Show.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Swap.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/TickSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Ticket.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/TicketStar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/TimeCircle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/TimeSquare.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/TwoUsers.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Unlock.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Upload.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/User.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Video.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Voice.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Voice2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/VolumeDown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/VolumeOff.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/VolumeUp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Wallet.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/icons/curved/Work.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Avatar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/.sass-cache/7abd8beeff46805754075b8ed703244b6713bebf/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/.sass-cache/7abd8beeff46805754075b8ed703244b6713bebf/app.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MembersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MembersList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/.sass-cache/7abd8beeff46805754075b8ed703244b6713bebf/app.scssc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
@@ -50,6 +145,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="ProjectId" id="22KK90wjnm2DRJAxjvlbh0BRdYO" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,16 +162,27 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.linters.configure.manually.selectedeslint" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/watchers.xml" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\microservices\react-chat-app\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\microservices\react-chat-app\src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +197,10 @@
       <workItem from="1639733406209" duration="332000" />
       <workItem from="1639733757870" duration="361000" />
       <workItem from="1639734134725" duration="96000" />
-      <workItem from="1639734254660" duration="2633000" />
+      <workItem from="1639734254660" duration="4910000" />
+      <workItem from="1639743964690" duration="52000" />
+      <workItem from="1639744070029" duration="134000" />
+      <workItem from="1639744218053" duration="197000" />
     </task>
     <servers />
   </component>

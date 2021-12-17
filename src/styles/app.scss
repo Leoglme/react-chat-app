@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap');
 
 $grey200: #191d1e;
+$grey300: #191d1e;
+$primary: #43a0ff;
+$lighten: #8d9097;
 
+
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   margin: 0;
@@ -13,6 +21,7 @@ body {
   background: #161719;
   font-size: 15px;
   color: #ffffff;
+  overflow: hidden;
 }
 
 code {
@@ -22,18 +31,107 @@ code {
 
 .App {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
 }
 
 .layout-left, .layout-center, .layout-right {
   height: 100%;
+  min-height: 100vh;
 }
 
 .column_header {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.text-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.layout-right {
+  min-width: unset;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.column_container {
+  height: 100vh;
+  padding: 32px 32px 0;
+
+  &.details {
+    background: $grey300;
+  }
+  .column_header {
+    margin-bottom: 32px;
+  }
+}
+.center, .start, .end {
+  display: flex;
+  align-items: center;
+}
+.center {
+  justify-content: center;
+}
+.start {
+  justify-content: start;
+}
+.end {
+  justify-content: flex-end;
+}
+
+ul {
+  list-style: none;
+}
+
+.avatar {
+  border-radius: 45px;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px;
+  }
+}
+
+.avatar-initial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  background: $primary;
+}
+
+svg.lighten path{
+  stroke: $lighten;
+}
+
+.lighten {
+  color: $lighten;
+}
+
+.icon-clickable {
+  flex: 1;
+  cursor: pointer;
+
+  &:hover .lighten {
+    svg {
+      width: 22px;
+      height: 22px;
+    }
+    path {
+      stroke: #ffffff;
+    }
+  }
+}
+
+.small {
+  font-size: 12px;
 }
