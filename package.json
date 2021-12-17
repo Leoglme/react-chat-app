@@ -1,15 +1,35 @@
 {
   "name": "react-chat-app",
   "version": "0.1.0",
+  "description": "Chat application made with react js ",
   "private": true,
+  "license": "MIT",
+  "author": "dibodev <contact@dibodev.com>",
+  "homepage": "https://dibodev.com/chat",
+  "repository": "leoglme/react-chat-app",
+  "bugs": {
+    "url": "https://github.com/Leoglme/react-chat-app/issues"
+  },
+  "keywords": [
+    "chat",
+    "chat apps",
+    "react",
+    "reactjs",
+    "conversation",
+    "message"
+  ],
   "dependencies": {
+    "@emotion/react": "^11.7.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-iconly": "^2.2.3",
     "react-router-dom": "^6.1.1",
     "react-scripts": "5.0.0",
+    "react-spinners": "^0.11.0",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
@@ -17,12 +37,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
