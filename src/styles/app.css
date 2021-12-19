@@ -52,12 +52,18 @@ code {
   .column_container .column_header {
     margin-bottom: 32px; }
 
-.center, .start, .end {
+.center, .start, .end, .space-between {
   display: flex;
   align-items: center; }
 
 .center {
   justify-content: center; }
+
+.column {
+  flex-direction: column; }
+
+.space-between {
+  justify-content: space-between; }
 
 .start {
   justify-content: start; }
@@ -99,5 +105,25 @@ svg.lighten path {
 
 .small {
   font-size: 12px; }
+
+.w100 {
+  width: 100%; }
+
+.recent-message {
+  width: 100%;
+  padding: 8px;
+  user-select: none;
+  cursor: pointer; }
+  .recent-message:hover, .recent-message:active {
+    background: #252628; }
+
+.pointer {
+  cursor: pointer; }
+
+.message-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
 
 /*# sourceMappingURL=app.css.map */

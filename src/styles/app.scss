@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap');
 
+$grey: #252628;
 $grey200: #191d1e;
 $grey300: #191d1e;
 $primary: #43a0ff;
@@ -74,12 +75,18 @@ code {
     margin-bottom: 32px;
   }
 }
-.center, .start, .end {
+.center, .start, .end, .space-between {
   display: flex;
   align-items: center;
 }
 .center {
   justify-content: center;
+}
+.column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
 }
 .start {
   justify-content: start;
@@ -134,4 +141,30 @@ svg.lighten path{
 
 .small {
   font-size: 12px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.recent-message {
+  width: 100%;
+  padding: 8px;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover, &:active {
+    background: $grey;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.message-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }

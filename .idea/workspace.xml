@@ -5,17 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b5f82e-0316-48c2-a1bd-cbac28e60107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Chat/Message.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Chat/Messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Chat/RecentMessages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ChatBox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MessagesList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/SearchBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/react-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/quila192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/quila512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Chat/RecentMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MembersList.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Avatar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Avatar.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icons/curved/EditSquare.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/curved/EditSquare.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chat/RecentMessages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/RecentMessages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MessagesList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MessagesList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/SearchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/watchers.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Ruby30/bin/scss" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -72,7 +87,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2021.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\leogu\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.5744.223\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -100,6 +115,10 @@
       <workItem from="1639743964690" duration="52000" />
       <workItem from="1639744070029" duration="134000" />
       <workItem from="1639744218053" duration="197000" />
+      <workItem from="1639930608133" duration="33000" />
+      <workItem from="1639937484573" duration="406000" />
+      <workItem from="1639947106013" duration="1908000" />
+      <workItem from="1639952659119" duration="1673000" />
     </task>
     <servers />
   </component>

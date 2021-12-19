@@ -5,7 +5,7 @@ import MessagesList from "../components/MessagesList";
 
 function Home(props) {
     return (<>
-        <div className="layout-left">
+        <div className="layout-left column_container">
             <MessagesList/>
         </div>
         <div className="layout-center">

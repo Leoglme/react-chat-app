@@ -1,4 +1,5 @@
 import axios from './axios'
+import moment from "moment";
 
 const GetUsers = async (setState) => {
     await axios.get('/users').then(res => {
@@ -17,7 +18,15 @@ const GetInitial = (name, defaultValue = "AN") => {
     return defaultValue
 }
 
+
+const dateToHour = (date) => {
+  if (date){
+      return moment(date).format("hh:mm");
+  }
+}
+
 export {
     GetUsers,
-    GetInitial
+    GetInitial,
+    dateToHour
 }
