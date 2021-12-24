@@ -153,20 +153,26 @@ svg.lighten path {
 
 .recent-message {
   width: 100%;
-  padding: 8px;
+  padding: 8px 16px;
+  border-radius: 12px;
   user-select: none;
   cursor: pointer; }
   .recent-message:hover, .recent-message:active {
     background: #252628; }
+  .recent-message:active {
+    background: #1e1f21; }
 
 .pointer {
   cursor: pointer; }
 
 .message-label {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; }
+  align-items: flex-start;
+  gap: 5px; }
+
+.discussion-name {
+  font-size: 14px; }
 
 .messages {
   display: flex;

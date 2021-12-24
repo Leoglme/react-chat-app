@@ -3,6 +3,7 @@
 $grey: #252628;
 $grey200: #1c1d1f;
 $grey300: #191d1e;
+$grey400: #1e1f21;
 $primary: #43a0ff;
 $lighten: #8d9097;
 
@@ -198,12 +199,17 @@ svg.lighten path{
 
 .recent-message {
   width: 100%;
-  padding: 8px;
+  padding: 8px 16px;
+  border-radius: 12px;
   user-select: none;
   cursor: pointer;
 
   &:hover, &:active {
     background: $grey;
+  }
+
+  &:active {
+    background: $grey400;
   }
 }
 
@@ -213,9 +219,13 @@ svg.lighten path{
 
 .message-label {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  gap: 5px;
+}
+
+.discussion-name {
+  font-size: 14px;
 }
 
 .messages {

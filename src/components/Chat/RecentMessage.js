@@ -17,13 +17,17 @@ function RecentMessage({discussion}) {
         <div className="recent-message space-between">
             <Avatar/>
             <div className="space-between" style={{flex: '1'}}>
-                <span className="discussion-name">
+                <div style={{marginLeft: 20}}>
+                    <span className="discussion-name">
                     {discussion.name}
                 </span>
-                <span className="message-label">
-                    <span className="small lighten">{senderName}: </span>
+                    <span className="message-label">
+                    <span className="small lighten" style={{textTransform: 'capitalize'}}>
+                        {senderName}:
+                    </span>
                     <span className="small">{lastMessage.content}</span>
                 </span>
+                </div>
                 <span className="small time">{dateToHour(discussion.updated_at)}</span>
             </div>
         </div>
