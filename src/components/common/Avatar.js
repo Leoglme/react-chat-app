@@ -3,8 +3,8 @@ import {GetInitial} from "../../common";
 import clsx from 'clsx';
 
 function Avatar({image, user, size, ml, mr}) {
-    const fullName = user ? user.firstname + " " + user.lastname : "Anonymous";
-    const computeSize = size || 45;
+    const fullName = user ? user.name : "Anonymous";
+    const computeSize = size || 40;
     return (<>
         <div className={clsx('avatar', !image ? 'avatar-initial' : null)}
              style={{

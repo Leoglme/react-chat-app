@@ -1,9 +1,14 @@
 import React from 'react';
 import Message from "./Message";
 
+
 function Messages(props) {
     return (<>
-        <Message/>
+        <div className="messages">
+            <Message received/>
+            <Message sent/>
+        </div>
+
     </>);
 }
 

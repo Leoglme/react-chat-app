@@ -1,5 +1,4 @@
 import React from 'react';
-import { ReactComponent as EditSquare } from '../../assets/icons/curved/EditSquare.svg';
 import RecentMessage from "./RecentMessage";
 import SearchBar from "../common/SearchBar";
 
@@ -73,14 +72,8 @@ const List = (
 
 function RecentMessages(props) {
     return (<>
-        <div className="space-between">
-            <h4 className="block-title">Messages</h4>
-            <div className="pointer">
-                <EditSquare/>
-            </div>
-        </div>
         <SearchBar/>
-        <div className="column center">
+        <div className="column center w100">
             {List}
         </div>
     </>);

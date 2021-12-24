@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap');
 
 $grey: #252628;
-$grey200: #191d1e;
+$grey200: #1c1d1f;
 $grey300: #191d1e;
 $primary: #43a0ff;
 $lighten: #8d9097;
@@ -23,6 +23,22 @@ body {
   font-size: 15px;
   color: #ffffff;
   overflow: hidden;
+}
+
+input, textarea {
+  background: $grey200;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 6px 14px;
+  border: 1px solid transparent;
+  line-height: 24px;
+  font-weight: normal;
+  font-size: 14px;
+  outline: currentcolor none medium;
+
+  &:focus {
+    border-color: lighten($grey200, 8%);
+  }
 }
 
 code {
@@ -57,7 +73,18 @@ code {
 }
 
 .layout-right {
-  min-width: unset;
+  min-width: 20vw;
+}
+.layout-left {
+  border-right: 2px solid #1c1d1f;
+  min-width: 24vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.layout-center {
+  width: 100%;
 }
 
 .text-white {
@@ -66,7 +93,7 @@ code {
 
 .column_container {
   height: 100vh;
-  padding: 32px 32px 0;
+  padding: 24px 32px 0;
 
   &.details {
     background: $grey300;
@@ -147,6 +174,28 @@ svg.lighten path{
   width: 100%;
 }
 
+.ml-2 {
+  margin-left: 20px;
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.lh-0 {
+  line-height: 0;
+}
+
+.chat-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
 .recent-message {
   width: 100%;
   padding: 8px;
@@ -167,4 +216,23 @@ svg.lighten path{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.message {
+  border-radius: 20px 0 20px 20px;
+
+  &.sent {
+    background: $primary;
+  }
+
+  &.received {
+    background: #343A42;
+  }
 }
