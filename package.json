@@ -1,7 +1,7 @@
 {
   "name": "react-chat-app",
-  "version": "0.1.0",
-  "description": "Chat application made with react js ",
+  "version": "1.0.0",
+  "description": "Quila is a Chat / messaging application made with react js",
   "private": true,
   "license": "MIT",
   "author": "dibodev <contact@dibodev.com>",
