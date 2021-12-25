@@ -66,7 +66,7 @@ const uselessData = [
 
 const List = (
     uselessData.map((data, index) => {
-        return (<RecentMessage key={index} discussion={data} />)
+        return (<RecentMessage key={index} discussion={data} active={index === 2}/>)
     })
 )
 

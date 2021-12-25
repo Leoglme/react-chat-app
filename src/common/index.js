@@ -1,10 +1,15 @@
 import axios from './axios'
 import moment from "moment";
+import {messages} from "./data";
 
 const GetUsers = async (setState) => {
     await axios.get('/users').then(res => {
         setState(res.data)
     })
+}
+
+const GetMessages = () => {
+    return messages
 }
 
 const GetInitial = (name, defaultValue = "AN") => {
@@ -28,5 +33,6 @@ const dateToHour = (date) => {
 export {
     GetUsers,
     GetInitial,
-    dateToHour
+    dateToHour,
+    GetMessages
 }

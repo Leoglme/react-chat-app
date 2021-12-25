@@ -2,9 +2,9 @@ import React from 'react';
 import Messages from "./Chat/Messages";
 import HeaderChat from "./Chat/HeaderChat";
 
-function ChatBox(props) {
+function ChatBox({users}) {
     return (<>
-        <HeaderChat title={"chat"}/>
+        <HeaderChat users={users} title={"chat"}/>
         <Messages/>
     </>);
 }

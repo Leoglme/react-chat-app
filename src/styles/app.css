@@ -105,12 +105,17 @@ ul {
     height: 100%;
     border-radius: 45px; }
 
-.avatar-initial {
+.avatar-initial, .avatar-count {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-transform: capitalize;
+  text-transform: capitalize; }
+
+.avatar-initial {
   background: #43a0ff; }
+
+.avatar-count {
+  background: #343A42; }
 
 svg.lighten path {
   stroke: #8d9097; }
@@ -149,7 +154,7 @@ svg.lighten path {
   align-items: center;
   justify-content: space-between;
   padding: 20px 30px;
-  box-shadow: 0 4px 2px -2px gray; }
+  box-shadow: 0 10px 6px -5px #161719; }
 
 .recent-message {
   width: 100%;
@@ -157,7 +162,7 @@ svg.lighten path {
   border-radius: 12px;
   user-select: none;
   cursor: pointer; }
-  .recent-message:hover, .recent-message:active {
+  .recent-message:hover, .recent-message.active {
     background: #252628; }
   .recent-message:active {
     background: #1e1f21; }
@@ -178,13 +183,42 @@ svg.lighten path {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%; }
+  padding: 0 30px;
+  overflow-y: auto;
+  height: calc(100vh - 100px); }
+
+.avatar-group {
+  display: flex; }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.messages {
+  scrollbar-width: thin;
+  scrollbar-color: #272a2f transparent; }
+
+/* Chrome, Edge, and Safari */
+.messages::-webkit-scrollbar {
+  width: 10px; }
+
+.messages::-webkit-scrollbar-track {
+  background: transparent; }
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #272a2f;
+  border-radius: 0;
+  border: 3px solid transparent; }
 
 .message {
-  border-radius: 20px 0 20px 20px; }
+  font-size: 13px;
+  padding: 10px 12px;
+  width: max-content;
+  margin: 5px 0; }
   .message.sent {
-    background: #43a0ff; }
+    background: #43a0ff;
+    margin-left: auto;
+    border-radius: 20px 0 20px 20px; }
   .message.received {
-    background: #343A42; }
+    background: #343A42;
+    border-radius: 0 20px 20px 20px; }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,10 +1,9 @@
 import React from 'react';
 import Avatar from "../common/Avatar";
 import {dateToHour} from "../../common";
+import clsx from "clsx";
 
-function RecentMessage({discussion}) {
-
-    console.log("discussion", discussion);
+function RecentMessage({discussion, active}) {
 
     const lastMessage = discussion.messages[discussion.messages.length - 1];
 
@@ -14,7 +13,7 @@ function RecentMessage({discussion}) {
         : lastMessage.sender.lastname;
 
     return (<>
-        <div className="recent-message space-between">
+        <div className={clsx('recent-message space-between', active ? 'active' : null)}>
             <Avatar/>
             <div className="space-between" style={{flex: '1'}}>
                 <div style={{marginLeft: 20}}>

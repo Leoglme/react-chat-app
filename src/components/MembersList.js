@@ -6,26 +6,20 @@ import {ReactComponent as Chat} from '../assets/icons/curved/Chat.svg';
 import Avatar from "./common/Avatar";
 import clsx from "clsx";
 
-function MembersList(props) {
-    const [users, setUsers] = useState([]);
+function MembersList({users}) {
 
-    useEffect(() => {
-        GetUsers(setUsers)
-    }, [])
 
     const List = (
         users.length > 0 ? <ul>
             {users.map((user, index) => {
-                return (<>
-                    <li className={'start'} key={index}
+                return (<li className={'start'} key={index}
                         style={{marginBottom: 12, fontSize: 13, minWidth: 230}}>
                         <Avatar image={user.image} user={user} size={25} mr={12}/>
                         {user.name}
                         <div className={clsx('end', 'icon-clickable')}>
-                            <Chat class={'lighten'}/>
+                            <Chat className={'lighten'}/>
                         </div>
-                    </li>
-                </>)
+                    </li>)
             })}
         </ul> : <Spinner/>
     )
