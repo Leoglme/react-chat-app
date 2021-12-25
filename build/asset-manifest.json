@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Leoglme/react-chat-appstatic/css/main.8aa75cd6.css",
+    "main.js": "/Leoglme/react-chat-appstatic/js/main.cc681ac0.js",
+    "static/js/787.c826c4a4.chunk.js": "/Leoglme/react-chat-appstatic/js/787.c826c4a4.chunk.js",
+    "static/media/Category.svg": "/Leoglme/react-chat-appstatic/media/Category.09a3bdfff23718b61a12062e2e063942.svg",
+    "static/media/MoreCircle.svg": "/Leoglme/react-chat-appstatic/media/MoreCircle.821809d33ab7946aef586d70ebef452d.svg",
+    "static/media/EditSquare.svg": "/Leoglme/react-chat-appstatic/media/EditSquare.2f8111fbd1c392688739acfc2513bc41.svg",
+    "index.html": "/Leoglme/react-chat-appindex.html",
+    "static/media/Chat.svg": "/Leoglme/react-chat-appstatic/media/Chat.03f3455051498498685aa32d125aab80.svg",
+    "main.8aa75cd6.css.map": "/Leoglme/react-chat-appstatic/css/main.8aa75cd6.css.map",
+    "main.cc681ac0.js.map": "/Leoglme/react-chat-appstatic/js/main.cc681ac0.js.map",
+    "787.c826c4a4.chunk.js.map": "/Leoglme/react-chat-appstatic/js/787.c826c4a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8aa75cd6.css",
+    "static/js/main.cc681ac0.js"
+  ]
+}
