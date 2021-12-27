@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #161719;
@@ -189,6 +189,37 @@ svg.lighten path {
 
 .avatar-group {
   display: flex; }
+
+.field-box {
+  display: flex;
+  box-shadow: 0 -20px 19px -16px #161719;
+  padding: 12px 32px;
+  position: sticky;
+  bottom: 0;
+  background: #161719; }
+  .field-box textarea {
+    width: 100%;
+    resize: none;
+    font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px; }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #272a2f transparent; }
+
+/* Chrome, Edge, and Safari */
+textarea::-webkit-scrollbar {
+  width: 10px; }
+
+textarea::-webkit-scrollbar-track {
+  background: transparent; }
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #272a2f;
+  border-radius: 0;
+  border: 3px solid transparent; }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */

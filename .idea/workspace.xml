@@ -5,7 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b5f82e-0316-48c2-a1bd-cbac28e60107" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Chat/MessageField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/quila192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/quila512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.8aa75cd6.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.8aa75cd6.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.c826c4a4.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.c826c4a4.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.cc681ac0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.cc681ac0.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.cc681ac0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/Category.09a3bdfff23718b61a12062e2e063942.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/Chat.03f3455051498498685aa32d125aab80.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/EditSquare.2f8111fbd1c392688739acfc2513bc41.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/MoreCircle.821809d33ab7946aef586d70ebef452d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/01w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/02m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/03w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/04w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/05w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/06w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/07w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/08m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/09w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/10m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/11m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/12m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/13m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/14m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/15w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/16w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/17w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/18w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/19m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/20w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/21w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/22w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/23w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/24w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/25w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/26m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/27m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/28m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/29w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/30w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/31m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/32m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/33w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/34m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/35w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/36m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/37w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/38w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/39w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/40w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/41w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/42w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/43w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/44w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/45m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/46w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/47w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/48m.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/49w.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/userPics/50w.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ChatBox.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ChatBox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +176,9 @@
       <workItem from="1640339258856" duration="11082000" />
       <workItem from="1640437467124" duration="2195000" />
       <workItem from="1640456148401" duration="2815000" />
-      <workItem from="1640459193572" duration="14000" />
+      <workItem from="1640459193572" duration="53000" />
+      <workItem from="1640533917846" duration="47000" />
+      <workItem from="1640540326043" duration="1308000" />
     </task>
     <servers />
   </component>

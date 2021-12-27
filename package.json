@@ -22,7 +22,6 @@
   "description": "Quila is a Chat / messaging application made with react js",
   "license": "MIT",
   "author": "Dibodev <contact@dibodev.com> (https://dibodev.com/)",
-  "homepage": "https://github.com/Leoglme/react-chat-app#readme",
   "repository": "leoglme/react-chat-app",
   "bugs": {
     "url": "https://github.com/Leoglme/react-chat-app/issues"
