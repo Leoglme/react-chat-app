@@ -123,6 +123,67 @@ const messages = {
     ]
 }
 
+
+const conversations = [
+    {
+        name: 'Andy',
+        messages: [
+            {
+                sender: {
+                    id: 1,
+                    firstname: 'andy',
+                    lastname: 'beverly',
+                    image: '/userPics/01w.jpg'
+                },
+                content: "sure ! let's do it"
+            }
+        ],
+        updated_at: '2021-12-18T16:00:00Z'
+    },
+    {
+        name: 'Caterina',
+        messages: [
+            {
+                sender: {
+                    id: 1,
+                    firstname: 'andy',
+                    lastname: 'beverly'
+                },
+                content: "sure ! let's do it"
+            }
+        ],
+        updated_at: '2021-12-18T16:00:00Z'
+    },
+    {
+        name: 'Chat',
+        messages: [
+            {
+                sender: {
+                    id: 1,
+                    firstname: 'andy',
+                    lastname: 'beverly'
+                },
+                content: "sure ! let's do it"
+            }
+        ],
+        updated_at: '2021-12-18T16:00:00Z'
+    },
+    {
+        name: 'likeastorm',
+        messages: [
+            {
+                sender: {
+                    id: 1,
+                    firstname: 'andy',
+                    lastname: 'beverly'
+                },
+                content: "sure ! let's do it"
+            }
+        ],
+        updated_at: '2021-12-18T16:00:00Z'
+    }
+]
+
 export {
-    messages, user1, user2, user3
+    messages, user1, user2, user3, conversations
 }

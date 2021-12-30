@@ -3,6 +3,7 @@ import MembersList from "../components/MembersList";
 import ChatBox from "../components/ChatBox";
 import MessagesList from "../components/MessagesList";
 import {GetUsers} from "../common";
+import AvatarMenu from "../components/AvatarMenu";
 
 function Home(props) {
     const [users, setUsers] = useState([]);
@@ -13,12 +14,13 @@ function Home(props) {
     return (<>
         <div className="layout-left column_container">
             <MessagesList/>
+            <AvatarMenu/>
         </div>
         <div className="layout-center">
-            <ChatBox users={users}/>
+            {/*<ChatBox users={users}/>*/}
         </div>
         <div className="layout-right">
-            <MembersList users={users}/>
+            {/*<MembersList users={users}/>*/}
         </div>
     </>);
 }

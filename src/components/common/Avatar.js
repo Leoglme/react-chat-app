@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 function Avatar({image, user, size, ml, mr}) {
     const fullName = user ? user.name : "Anonymous";
-    const computeSize = size || 40;
+    const computeSize = size || 42;
     return (<>
         <div className={clsx('avatar', !image ? 'avatar-initial' : null)}
              style={{

@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap");
+/*global styles*/
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -29,52 +31,14 @@ input, textarea {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
-.App {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 100vh; }
-
-.layout-left, .layout-center, .layout-right {
-  height: 100%;
-  min-height: 100vh; }
-
-.column_header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
-
 .text-h6 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500; }
-
-.layout-right {
-  min-width: 20vw; }
-
-.layout-left {
-  border-right: 2px solid #1c1d1f;
-  min-width: 24vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center; }
-
-.layout-center {
-  width: 100%; }
 
 .text-white {
   color: #ffffff; }
-
-.column_container {
-  height: 100vh;
-  padding: 24px 32px 0; }
-  .column_container.details {
-    background: #191d1e; }
-  .column_container .column_header {
-    margin-bottom: 32px; }
 
 .center, .start, .end, .space-between {
   display: flex;
@@ -82,9 +46,6 @@ code {
 
 .center {
   justify-content: center; }
-
-.column {
-  flex-direction: column; }
 
 .space-between {
   justify-content: space-between; }
@@ -94,43 +55,6 @@ code {
 
 .end {
   justify-content: flex-end; }
-
-ul {
-  list-style: none; }
-
-.avatar {
-  border-radius: 45px; }
-  .avatar img {
-    width: 100%;
-    height: 100%;
-    border-radius: 45px; }
-
-.avatar-initial, .avatar-count {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: capitalize; }
-
-.avatar-initial {
-  background: #43a0ff; }
-
-.avatar-count {
-  background: #343A42; }
-
-svg.lighten path {
-  stroke: #8d9097; }
-
-.lighten {
-  color: #8d9097; }
-
-.icon-clickable {
-  flex: 1;
-  cursor: pointer; }
-  .icon-clickable:hover .lighten svg {
-    width: 22px;
-    height: 22px; }
-  .icon-clickable:hover .lighten path {
-    stroke: #ffffff; }
 
 .small {
   font-size: 12px; }
@@ -144,64 +68,32 @@ svg.lighten path {
 .mr-1 {
   margin-right: 10px; }
 
+.ps-8 {
+  padding-right: 8px;
+  padding-left: 8px; }
+
+.ps-12 {
+  padding-right: 12px;
+  padding-left: 12px; }
+
+.ps-16 {
+  padding-right: 16px;
+  padding-left: 16px; }
+
 .lh-0 {
   line-height: 0; }
-
-.chat-header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 30px;
-  box-shadow: 0 10px 6px -5px #161719; }
-
-.recent-message {
-  width: 100%;
-  padding: 8px 16px;
-  border-radius: 12px;
-  user-select: none;
-  cursor: pointer; }
-  .recent-message:hover, .recent-message.active {
-    background: #252628; }
-  .recent-message:active {
-    background: #1e1f21; }
 
 .pointer {
   cursor: pointer; }
 
-.message-label {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 5px; }
+ul {
+  list-style: none; }
 
-.discussion-name {
-  font-size: 14px; }
+.column {
+  flex-direction: column; }
 
-.messages {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0 30px;
-  overflow-y: auto;
-  height: calc(100vh - 100px); }
-
-.avatar-group {
-  display: flex; }
-
-.field-box {
-  display: flex;
-  box-shadow: 0 -20px 19px -16px #161719;
-  padding: 12px 32px;
-  position: sticky;
-  bottom: 0;
-  background: #161719; }
-  .field-box textarea {
-    width: 100%;
-    resize: none;
-    font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    font-size: 12px; }
+.lighten {
+  color: #8d9097; }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -239,6 +131,126 @@ textarea::-webkit-scrollbar-thumb {
   border-radius: 0;
   border: 3px solid transparent; }
 
+/*Components and page styles*/
+.App {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh; }
+
+.search-box {
+  position: relative;
+  width: 100%; }
+
+.layout-left, .layout-center, .layout-right {
+  height: 100%;
+  min-height: 100vh; }
+
+.layout-right {
+  min-width: 20vw; }
+
+.layout-left {
+  border-right: 2px solid #1c1d1f;
+  min-width: 24vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; }
+
+.layout-center {
+  width: 100%; }
+
+.column_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+
+.column_container {
+  height: 100vh;
+  padding: 24px 18px 0; }
+  .column_container.details {
+    background: #191d1e; }
+  .column_container .column_header {
+    margin-bottom: 32px; }
+
+.avatar {
+  border-radius: 45px; }
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 45px; }
+
+.avatar-initial, .avatar-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize; }
+
+.avatar-initial {
+  background: #43a0ff; }
+
+.avatar-count {
+  background: #343A42; }
+
+svg.lighten circle, svg.lighten path {
+  stroke: #8d9097; }
+
+.icon-clickable {
+  flex: 1;
+  cursor: pointer; }
+  .icon-clickable:hover .lighten svg {
+    width: 22px;
+    height: 22px; }
+  .icon-clickable:hover .lighten path {
+    stroke: #ffffff; }
+
+.icon-inner {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em; }
+
+.chat-header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  box-shadow: 0 10px 6px -5px #161719; }
+
+.recent-message {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 12px;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 5px; }
+  .recent-message:hover, .recent-message.active {
+    background: #252628; }
+  .recent-message:active {
+    background: #1e1f21; }
+
+.message-label {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px; }
+
+.discussion-name {
+  font-size: 14px; }
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 30px;
+  overflow-y: auto;
+  height: calc(100vh - 100px); }
+
 .message {
   font-size: 13px;
   padding: 10px 12px;
@@ -251,5 +263,21 @@ textarea::-webkit-scrollbar-thumb {
   .message.received {
     background: #343A42;
     border-radius: 0 20px 20px 20px; }
+
+.avatar-group {
+  display: flex; }
+
+.field-box {
+  display: flex;
+  box-shadow: 0 -20px 19px -16px #161719;
+  padding: 12px 32px;
+  position: sticky;
+  bottom: 0;
+  background: #161719; }
+  .field-box textarea {
+    width: 100%;
+    resize: none;
+    font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px; }
 
 /*# sourceMappingURL=app.css.map */
