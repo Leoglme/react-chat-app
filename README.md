@@ -1,5 +1,5 @@
 <p align="center">
-<img width="70" height="70" src="https://dibodev-files.s3.eu-west-3.amazonaws.com/quila192.png">
+<img width="70" height="70" alt="logo quila" src="https://dibodev-files.s3.eu-west-3.amazonaws.com/quila192.png">
 </p>
 
 <h2 align="center">Quila</h2>
@@ -12,6 +12,7 @@
 ![Language](https://img.shields.io/badge/language-javascript-yellow.svg?style=flat)
 ![Language](https://img.shields.io/badge/language-scss-ce679a.svg?style=flat)
 
+<img alt="hero" src="https://dibodev-files.s3.eu-west-3.amazonaws.com/quila-hero.png">
 
 ## [[ Live Demo ]](https://quila.vercel.app)
 

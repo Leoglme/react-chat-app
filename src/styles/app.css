@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap");
+/*global styles*/
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
   margin: 0;
-  font-family: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #161719;
@@ -29,27 +31,120 @@ input, textarea {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
 
+.text-h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500; }
+
+.text-white {
+  color: #ffffff; }
+
+.center, .start, .end, .space-between {
+  display: flex;
+  align-items: center; }
+
+.center {
+  justify-content: center; }
+
+.space-between {
+  justify-content: space-between; }
+
+.start {
+  justify-content: start; }
+
+.end {
+  justify-content: flex-end; }
+
+.small {
+  font-size: 12px; }
+
+.w100 {
+  width: 100%; }
+
+.ml-2 {
+  margin-left: 20px; }
+
+.mr-1 {
+  margin-right: 10px; }
+
+.ps-8 {
+  padding-right: 8px;
+  padding-left: 8px; }
+
+.ps-12 {
+  padding-right: 12px;
+  padding-left: 12px; }
+
+.ps-16 {
+  padding-right: 16px;
+  padding-left: 16px; }
+
+.lh-0 {
+  line-height: 0; }
+
+.pointer {
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+.column {
+  flex-direction: column; }
+
+.lighten {
+  color: #8d9097; }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+textarea {
+  scrollbar-width: thin;
+  scrollbar-color: #272a2f transparent; }
+
+/* Chrome, Edge, and Safari */
+textarea::-webkit-scrollbar {
+  width: 10px; }
+
+textarea::-webkit-scrollbar-track {
+  background: transparent; }
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #272a2f;
+  border-radius: 0;
+  border: 3px solid transparent; }
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.messages {
+  scrollbar-width: thin;
+  scrollbar-color: #272a2f transparent; }
+
+/* Chrome, Edge, and Safari */
+.messages::-webkit-scrollbar {
+  width: 10px; }
+
+.messages::-webkit-scrollbar-track {
+  background: transparent; }
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #272a2f;
+  border-radius: 0;
+  border: 3px solid transparent; }
+
+/*Components and page styles*/
 .App {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh; }
 
+.search-box {
+  position: relative;
+  width: 100%; }
+
 .layout-left, .layout-center, .layout-right {
   height: 100%;
   min-height: 100vh; }
-
-.column_header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; }
-
-.text-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 16px;
-  font-weight: 500; }
 
 .layout-right {
   min-width: 20vw; }
@@ -65,38 +160,19 @@ code {
 .layout-center {
   width: 100%; }
 
-.text-white {
-  color: #ffffff; }
+.column_header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
 
 .column_container {
   height: 100vh;
-  padding: 24px 32px 0; }
+  padding: 24px 18px 0; }
   .column_container.details {
     background: #191d1e; }
   .column_container .column_header {
     margin-bottom: 32px; }
-
-.center, .start, .end, .space-between {
-  display: flex;
-  align-items: center; }
-
-.center {
-  justify-content: center; }
-
-.column {
-  flex-direction: column; }
-
-.space-between {
-  justify-content: space-between; }
-
-.start {
-  justify-content: start; }
-
-.end {
-  justify-content: flex-end; }
-
-ul {
-  list-style: none; }
 
 .avatar {
   border-radius: 45px; }
@@ -117,11 +193,8 @@ ul {
 .avatar-count {
   background: #343A42; }
 
-svg.lighten path {
+svg.lighten circle, svg.lighten path {
   stroke: #8d9097; }
-
-.lighten {
-  color: #8d9097; }
 
 .icon-clickable {
   flex: 1;
@@ -132,20 +205,13 @@ svg.lighten path {
   .icon-clickable:hover .lighten path {
     stroke: #ffffff; }
 
-.small {
-  font-size: 12px; }
-
-.w100 {
-  width: 100%; }
-
-.ml-2 {
-  margin-left: 20px; }
-
-.mr-1 {
-  margin-right: 10px; }
-
-.lh-0 {
-  line-height: 0; }
+.icon-inner {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em; }
 
 .chat-header {
   position: sticky;
@@ -158,17 +224,15 @@ svg.lighten path {
 
 .recent-message {
   width: 100%;
-  padding: 8px 16px;
+  padding: 8px 12px;
   border-radius: 12px;
   user-select: none;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 5px; }
   .recent-message:hover, .recent-message.active {
     background: #252628; }
   .recent-message:active {
     background: #1e1f21; }
-
-.pointer {
-  cursor: pointer; }
 
 .message-label {
   display: flex;
@@ -187,27 +251,6 @@ svg.lighten path {
   overflow-y: auto;
   height: calc(100vh - 100px); }
 
-.avatar-group {
-  display: flex; }
-
-/* ===== Scrollbar CSS ===== */
-/* Firefox */
-.messages {
-  scrollbar-width: thin;
-  scrollbar-color: #272a2f transparent; }
-
-/* Chrome, Edge, and Safari */
-.messages::-webkit-scrollbar {
-  width: 10px; }
-
-.messages::-webkit-scrollbar-track {
-  background: transparent; }
-
-.messages::-webkit-scrollbar-thumb {
-  background-color: #272a2f;
-  border-radius: 0;
-  border: 3px solid transparent; }
-
 .message {
   font-size: 13px;
   padding: 10px 12px;
@@ -220,5 +263,21 @@ svg.lighten path {
   .message.received {
     background: #343A42;
     border-radius: 0 20px 20px 20px; }
+
+.avatar-group {
+  display: flex; }
+
+.field-box {
+  display: flex;
+  box-shadow: 0 -20px 19px -16px #161719;
+  padding: 12px 32px;
+  position: sticky;
+  bottom: 0;
+  background: #161719; }
+  .field-box textarea {
+    width: 100%;
+    resize: none;
+    font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 12px; }
 
 /*# sourceMappingURL=app.css.map */
