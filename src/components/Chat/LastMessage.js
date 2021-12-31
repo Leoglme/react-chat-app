@@ -35,8 +35,8 @@ function LastMessage({lastMessage}) {
                 return typing
             case (lastMessage.content.message !== null):
                 return message
-            case (lastMessage.content.audio):
-                return message;
+            case (lastMessage.content.audio !== null):
+                return audio;
             case (lastMessage.content.media):
                 return message;
         }

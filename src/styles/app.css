@@ -221,6 +221,12 @@ svg.lighten circle, svg.lighten path {
   .typing-icon path:nth-child(2) {
     fill: #43a0ff; }
 
+.audio-icon {
+  width: 17px;
+  height: 17px; }
+  .audio-icon path {
+    stroke: #ffffff; }
+
 .chat-header {
   position: sticky;
   top: 0;
