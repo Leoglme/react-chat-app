@@ -93,7 +93,7 @@ ul {
   flex-direction: column; }
 
 .lighten {
-  color: #8d9097; }
+  color: #808080; }
 
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
@@ -194,7 +194,7 @@ textarea::-webkit-scrollbar-thumb {
   background: #343A42; }
 
 svg.lighten circle, svg.lighten path {
-  stroke: #8d9097; }
+  stroke: #808080; }
 
 .icon-clickable {
   flex: 1;
@@ -311,5 +311,55 @@ svg.lighten circle, svg.lighten path {
     resize: none;
     font-family: -apple-system, Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 12px; }
+
+/**
+ * ==============================================
+ * Dot Flashing
+ * ==============================================
+ */
+.dot-flashing {
+  position: relative;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #808080;
+  color: #808080;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: .5s;
+  top: 1px; }
+
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0; }
+
+.dot-flashing::before {
+  left: -8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #808080;
+  color: #808080;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s; }
+
+.dot-flashing::after {
+  left: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #808080;
+  color: #808080;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s; }
+
+@keyframes dotFlashing {
+  0% {
+    background-color: #808080; }
+  50%,
+  100% {
+    background-color: #b3b3b3; } }
 
 /*# sourceMappingURL=app.css.map */

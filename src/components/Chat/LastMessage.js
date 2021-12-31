@@ -1,6 +1,7 @@
 import React from 'react';
 import {ReactComponent as Edit} from "../../assets/icons/light/Edit.svg";
 import {ReactComponent as Voice} from "../../assets/icons/light/Voice.svg";
+import DotFlashing from "../common/DotFlashing";
 
 function LastMessage({lastMessage}) {
 
@@ -22,7 +23,9 @@ function LastMessage({lastMessage}) {
         const typing = <>
             <span className="small lighten start" style={{gap: 5}}>
                  <Edit className={'typing-icon'}/>
-                 <span style={{textTransform: 'capitalize'}}>{lastMessage.isTyping.name}</span> is typing...
+                 <span style={{textTransform: 'capitalize'}}>
+                     {lastMessage.isTyping.name}
+                 </span> is typing <DotFlashing/>
             </span>
         </>
         const audio = <>

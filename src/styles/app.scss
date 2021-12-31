@@ -7,7 +7,7 @@ $grey300: #191d1e;
 $grey400: #1e1f21;
 $grey500: #343A42;
 $primary: #43a0ff;
-$lighten: #8d9097;
+$lighten: #808080;
 $orange: #fa734b;
 
 $fonts: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -403,5 +403,62 @@ svg.lighten {
     resize: none;
     font-family: $fonts;
     font-size: 12px;
+  }
+}
+
+/**
+ * ==============================================
+ * Dot Flashing
+ * ==============================================
+ */
+.dot-flashing {
+  position: relative;
+  left: 10px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: $lighten;
+  color: $lighten;
+  animation: dotFlashing 1s infinite linear alternate;
+  animation-delay: .5s;
+  top: 1px;
+}
+
+.dot-flashing::before, .dot-flashing::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: $lighten;
+  color: $lighten;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 8px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: $lighten;
+  color: $lighten;
+  animation: dotFlashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dotFlashing {
+  0% {
+    background-color: $lighten;
+  }
+  50%,
+  100% {
+    background-color: lighten($lighten, 20%);
   }
 }
