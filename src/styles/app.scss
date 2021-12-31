@@ -300,6 +300,13 @@ svg.lighten {
   }
 }
 
+.dot-separator {
+  background: lighten($grey, 5%);
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+}
+
 .chat-header {
   position: sticky;
   top: 0;

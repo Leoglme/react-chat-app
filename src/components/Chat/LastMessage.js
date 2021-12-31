@@ -8,8 +8,10 @@ function LastMessage({lastMessage}) {
         ? lastMessage.sender.firstname
         : lastMessage.sender.lastname;
 
-    const item = () => {
+    const imagesLength = lastMessage.content.media ? lastMessage.content.media.filter(e => e.type === "image").length : 0;
+    const filesLength = lastMessage.content.media ? lastMessage.content.media.filter(e => e.type === "file").length : 0;
 
+    const item = () => {
         const message = <>
             <span className="small lighten" style={{textTransform: 'capitalize'}}>
                         {senderName}:
@@ -30,6 +32,14 @@ function LastMessage({lastMessage}) {
             </span>
         </>
 
+        const media = <>
+            <span className="small lighten start" style={{gap: 8}}>
+                 {imagesLength} {imagesLength > 1 ? 'images' : 'image'}
+                <span className="dot-separator"/>
+                {filesLength} {filesLength > 1 ? 'files' : 'file'}
+            </span>
+        </>
+
         switch (true) {
             case (lastMessage.isTyping !== false):
                 return typing
@@ -37,8 +47,8 @@ function LastMessage({lastMessage}) {
                 return message
             case (lastMessage.content.audio !== null):
                 return audio;
-            case (lastMessage.content.media):
-                return message;
+            case (lastMessage.content.media !== null):
+                return media;
         }
     }
 

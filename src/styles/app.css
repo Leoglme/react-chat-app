@@ -227,6 +227,12 @@ svg.lighten circle, svg.lighten path {
   .audio-icon path {
     stroke: #ffffff; }
 
+.dot-separator {
+  background: #313335;
+  border-radius: 50%;
+  width: 4px;
+  height: 4px; }
+
 .chat-header {
   position: sticky;
   top: 0;
