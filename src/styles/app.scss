@@ -279,6 +279,18 @@ svg.lighten {
   height: 1em;
 }
 
+.typing-icon {
+  width: 18px;
+  height: 18px;
+
+  & path:nth-child(1) {
+    stroke: transparent;
+  }
+  & path:nth-child(2) {
+    fill: $primary;
+  }
+}
+
 .chat-header {
   position: sticky;
   top: 0;
@@ -308,7 +320,7 @@ svg.lighten {
 
 .message-label {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 5px;
 }

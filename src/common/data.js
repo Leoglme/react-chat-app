@@ -133,9 +133,17 @@ const conversations = [
                     id: 1,
                     firstname: 'andy',
                     lastname: 'beverly',
-                    image: '/userPics/01w.jpg'
+                    image: '/userPics/01m.jpg'
                 },
-                content: "sure ! let's do it"
+                content: {
+                    message: "sure ! let's do it",
+                    audio: null,
+                    media: null
+                },
+                notifications: 2,
+                isTyping: {
+                    name: 'Andy'
+                },
             }
         ],
         updated_at: '2021-12-18T16:00:00Z'
@@ -147,9 +155,16 @@ const conversations = [
                 sender: {
                     id: 1,
                     firstname: 'andy',
-                    lastname: 'beverly'
+                    lastname: 'beverly',
+                    image: '/userPics/01w.jpg'
                 },
-                content: "sure ! let's do it"
+                content: {
+                    message: null,
+                    audio: true,
+                    media: null
+                },
+                notifications: 0,
+                isTyping: false
             }
         ],
         updated_at: '2021-12-18T16:00:00Z'
@@ -163,7 +178,13 @@ const conversations = [
                     firstname: 'andy',
                     lastname: 'beverly'
                 },
-                content: "sure ! let's do it"
+                content: {
+                    message: "sure ! let's do it",
+                    audio: null,
+                    media: null
+                },
+                notifications: 0,
+                isTyping: false
             }
         ],
         updated_at: '2021-12-18T16:00:00Z'
@@ -175,9 +196,37 @@ const conversations = [
                 sender: {
                     id: 1,
                     firstname: 'andy',
-                    lastname: 'beverly'
+                    lastname: 'beverly',
+                    image: '/userPics/02w.jpg'
                 },
-                content: "sure ! let's do it"
+                content: {
+                    message: null,
+                    audio: null,
+                    media: [
+                        {
+                            type: 'image',
+                            url: ''
+                        },
+                        {
+                            type: 'image',
+                            url: ''
+                        },
+                        {
+                            type: 'image',
+                            url: ''
+                        },
+                        {
+                            type: 'file',
+                            url: ''
+                        },
+                        {
+                            type: 'file',
+                            url: ''
+                        }
+                    ]
+                },
+                notifications: 0,
+                isTyping: false
             }
         ],
         updated_at: '2021-12-18T16:00:00Z'

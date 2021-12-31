@@ -213,6 +213,14 @@ svg.lighten circle, svg.lighten path {
   width: 1em;
   height: 1em; }
 
+.typing-icon {
+  width: 18px;
+  height: 18px; }
+  .typing-icon path:nth-child(1) {
+    stroke: transparent; }
+  .typing-icon path:nth-child(2) {
+    fill: #43a0ff; }
+
 .chat-header {
   position: sticky;
   top: 0;
@@ -236,7 +244,7 @@ svg.lighten circle, svg.lighten path {
 
 .message-label {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   gap: 5px; }
 
