@@ -18,7 +18,9 @@ function RecentMessage({discussion, active}) {
                 </span>
                     <LastMessage lastMessage={lastMessage}/>
                 </div>
-                <span className="small time">{dateToHour(discussion.updated_at)}</span>
+                {discussion.notifications
+                    ? <span className="notification">{discussion.notifications}</span>
+                    : <span className="small time">{dateToHour(discussion.updated_at)}</span>}
             </div>
         </div>
     </>);

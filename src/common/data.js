@@ -140,13 +140,13 @@ const conversations = [
                     audio: null,
                     media: null
                 },
-                notifications: 2,
                 isTyping: {
                     name: 'Andy'
                 },
             }
         ],
-        updated_at: '2021-12-18T16:00:00Z'
+        notifications: 2,
+        updated_at: '2021-12-18T08:32:00Z'
     },
     {
         name: 'Caterina',
@@ -163,11 +163,11 @@ const conversations = [
                     audio: true,
                     media: null
                 },
-                notifications: 0,
                 isTyping: false
             }
         ],
-        updated_at: '2021-12-18T16:00:00Z'
+        notifications: 0,
+        updated_at: '2021-12-18T08:32:00Z'
     },
     {
         name: 'Chat',
@@ -183,11 +183,11 @@ const conversations = [
                     audio: null,
                     media: null
                 },
-                notifications: 0,
                 isTyping: false
             }
         ],
-        updated_at: '2021-12-18T16:00:00Z'
+        notifications: 0,
+        updated_at: '2021-12-18T08:32:00Z'
     },
     {
         name: 'likeastorm',
@@ -225,11 +225,11 @@ const conversations = [
                         }
                     ]
                 },
-                notifications: 0,
                 isTyping: false
             }
         ],
-        updated_at: '2021-12-18T16:00:00Z'
+        notifications: 0,
+        updated_at: '2021-12-18T08:32:00Z'
     }
 ]
 

@@ -233,6 +233,18 @@ svg.lighten circle, svg.lighten path {
   width: 4px;
   height: 4px; }
 
+.notification {
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  background: #fa734b;
+  border-radius: 50%; }
+
 .chat-header {
   position: sticky;
   top: 0;

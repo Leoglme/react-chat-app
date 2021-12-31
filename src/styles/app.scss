@@ -8,6 +8,7 @@ $grey400: #1e1f21;
 $grey500: #343A42;
 $primary: #43a0ff;
 $lighten: #8d9097;
+$orange: #fa734b;
 
 $fonts: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
@@ -305,6 +306,19 @@ svg.lighten {
   border-radius: 50%;
   width: 4px;
   height: 4px;
+}
+
+.notification {
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  font-weight: 600;
+  font-size: 11px;
+  background: $orange;
+  border-radius: 50%;
 }
 
 .chat-header {
