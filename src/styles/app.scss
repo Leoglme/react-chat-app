@@ -244,6 +244,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .avatar-menu {
+  display: none;
   height: 200px;
   width: 260px;
   background: #292a2d;
@@ -253,20 +254,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .avatar-menu.active {
-  animation: growOut 300ms ease-in-out forwards;
+  display: block;
+  animation: scaleUp 300ms ease-in-out forwards;
   transform-origin: top center;
-}
-
-@keyframes growOut {
-  0% {
-    transform: scale(0)
-  }
-  80% {
-    transform: scale(1.1)
-  }
-  100% {
-    transform: scale(1)
-  }
 }
 
 .border-avatar {
@@ -509,6 +499,18 @@ svg.lighten {
   color: $lighten;
   animation: dotFlashing 1s infinite alternate;
   animation-delay: 1s;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0)
+  }
+  80% {
+    transform: scale(1.1)
+  }
+  100% {
+    transform: scale(1)
+  }
 }
 
 @keyframes dotFlashing {

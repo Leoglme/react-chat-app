@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Avatar from "./common/Avatar";
 import {userConnected} from "../common/data";
+import clsx from "clsx";
 
 function AvatarMenu(props) {
+    const [open, setOpen] = useState(false)
+
+    const handleMenu = () => {
+        setOpen(!open)
+    }
+
     const items = [
         {
             name: 'Profile',
@@ -14,19 +21,18 @@ function AvatarMenu(props) {
         }
     ]
 
-
     return (<>
         <div style={{position: "absolute", bottom: 24, left: 28}}>
-            <div className="avatar-menu">
+            <div className={clsx("avatar-menu", open ? 'active' : null)}>
                 <ul>
                     {items.map(item => {
-                        return <li>{item.name}</li>
+                        return <li key={item.name}>{item.name}</li>
                     })}
                 </ul>
             </div>
 
             <div className="start" style={{gap: 12}}>
-                <div className="border-avatar">
+                <div className={"border-avatar"} onClick={handleMenu}>
                     <Avatar
                         image={userConnected.image}
                         user={userConnected}
