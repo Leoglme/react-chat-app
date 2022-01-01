@@ -10,6 +10,11 @@ const user3 = {
     id: 3,
     name: 'scott'
 }
+const userConnected = {
+    id: 4,
+    name: 'Léo Glme',
+    image: '/userPics/02m.jpg'
+}
 
 
 const messages = {
@@ -234,5 +239,5 @@ const conversations = [
 ]
 
 export {
-    messages, user1, user2, user3, conversations
+    messages, user1, user2, user3, conversations, userConnected
 }
