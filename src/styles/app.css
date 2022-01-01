@@ -187,7 +187,6 @@ textarea::-webkit-scrollbar-thumb {
 
 .avatar-menu {
   display: none;
-  height: 200px;
   width: 260px;
   background: #292a2d;
   border-radius: 16px;
@@ -198,6 +197,37 @@ textarea::-webkit-scrollbar-thumb {
   display: block;
   animation: scaleUp 300ms ease-in-out forwards;
   transform-origin: top center; }
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 0;
+  padding: 16px;
+  border-bottom: 1px solid rgba(65, 67, 72, 0.7);
+  gap: 12px;
+  font-size: 14px;
+  -webkit-user-select: none;
+  cursor: pointer;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .menu-item:nth-child(1) {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px; }
+  .menu-item:last-child {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-bottom: 0; }
+  .menu-item:hover {
+    background: rgba(65, 67, 72, 0.7); }
+  .menu-item:active {
+    background: #414348; }
+  .menu-item svg {
+    width: 20px;
+    height: 20px; }
+    .menu-item svg path {
+      stroke: #43a0ff; }
 
 .border-avatar {
   background: #252628;

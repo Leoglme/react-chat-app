@@ -1,10 +1,14 @@
 import React, {useState} from 'react';
 import Avatar from "./common/Avatar";
 import {userConnected} from "../common/data";
+import {ReactComponent as Logout} from '../assets/icons/curved/Logout.svg';
+import {ReactComponent as User} from '../assets/icons/curved/User.svg';
 import clsx from "clsx";
+import { useNavigate } from 'react-router-dom';
 
 function AvatarMenu(props) {
     const [open, setOpen] = useState(false)
+    const navigate = useNavigate();
 
     const handleMenu = () => {
         setOpen(!open)
@@ -13,11 +17,13 @@ function AvatarMenu(props) {
     const items = [
         {
             name: 'Profile',
-            icon: 'toto'
+            icon: <User/>,
+            onClick: () => navigate('profile')
         },
         {
             name: 'Logout',
-            icon: 'toto'
+            icon: <Logout/>,
+            onClick: () => navigate('login')
         }
     ]
 
@@ -26,7 +32,9 @@ function AvatarMenu(props) {
             <div className={clsx("avatar-menu", open ? 'active' : null)}>
                 <ul>
                     {items.map(item => {
-                        return <li key={item.name}>{item.name}</li>
+                        return <li className={'menu-item'} onClick={item.onClick} key={item.name}>
+                            {item.icon}{item.name}
+                        </li>
                     })}
                 </ul>
             </div>
