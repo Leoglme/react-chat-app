@@ -10,11 +10,18 @@ function Messages({currentChat}) {
         return userConnected.id === message.sender.id;
     }
 
+    const oldMessage = (index) => {
+        if (!index) return null;
+        return messages[index - 1]
+    }
+
 
     const List = (
         messages.map((message, index) => {
             return (<Message key={index}
-                             content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'}
+                             oldMessage={oldMessage(index)}
+                             content={message.content}
+                             user={userIsSender(message) ? userConnected : message.sender}
                              received={!userIsSender(message)}
                              sent={userIsSender(message)}
             />)

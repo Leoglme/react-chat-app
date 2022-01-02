@@ -9,6 +9,7 @@ $grey500: #343A42;
 $primary: #43a0ff;
 $lighten: #808080;
 $orange: #fa734b;
+$yellow: #ecd25a;
 
 $fonts: -apple-system, Poppins, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
@@ -489,6 +490,7 @@ svg.lighten {
 }
 
 .message {
+  position: relative;
   font-size: 13px;
   padding: 10px 12px;
   width: max-content;
@@ -496,7 +498,6 @@ svg.lighten {
 
   &.sent {
     background: $primary;
-    margin-left: auto;
     border-radius: 20px 0 20px 20px;
   }
 
@@ -504,6 +505,58 @@ svg.lighten {
     background: $grey500;
     border-radius: 0 20px 20px 20px;
   }
+}
+
+.sound-wave {
+  height: 40px;
+  width: 280px;
+  display: flex;
+  right: 55px;
+  position: relative;
+  padding: 2px 0;
+  g {
+    fill: $yellow;
+  }
+}
+
+.play-icon {
+  width: 33px;
+  height: 33px;
+
+  path {
+    fill: #ffffff;
+  }
+}
+
+.message-image {
+  display: flex;
+  height: 250px;
+  position: relative;
+  max-width: 400px;
+  gap: 8px;
+  img {
+    border-radius: 15px;
+  }
+}
+
+.message-container {
+  display: flex;
+  gap: 16px;
+
+  .avatar {
+    top: 2px;
+    position: relative;
+  }
+}
+
+.message-sender {
+  font-size: 13px;
+}
+
+.message-time {
+  font-size: 13px;
+  font-weight: 400;
+  color: $lighten;
 }
 
 .avatar-group {

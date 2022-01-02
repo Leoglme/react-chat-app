@@ -366,17 +366,57 @@ svg.lighten circle, svg.lighten path {
   height: calc(100vh - 100px); }
 
 .message {
+  position: relative;
   font-size: 13px;
   padding: 10px 12px;
   width: max-content;
   margin: 5px 0; }
   .message.sent {
     background: #43a0ff;
-    margin-left: auto;
     border-radius: 20px 0 20px 20px; }
   .message.received {
     background: #343A42;
     border-radius: 0 20px 20px 20px; }
+
+.sound-wave {
+  height: 40px;
+  width: 280px;
+  display: flex;
+  right: 55px;
+  position: relative;
+  padding: 2px 0; }
+  .sound-wave g {
+    fill: #ecd25a; }
+
+.play-icon {
+  width: 33px;
+  height: 33px; }
+  .play-icon path {
+    fill: #ffffff; }
+
+.message-image {
+  display: flex;
+  height: 250px;
+  position: relative;
+  max-width: 400px;
+  gap: 8px; }
+  .message-image img {
+    border-radius: 15px; }
+
+.message-container {
+  display: flex;
+  gap: 16px; }
+  .message-container .avatar {
+    top: 2px;
+    position: relative; }
+
+.message-sender {
+  font-size: 13px; }
+
+.message-time {
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080; }
 
 .avatar-group {
   display: flex; }
