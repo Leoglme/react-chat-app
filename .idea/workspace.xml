@@ -6,16 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a9b5f82e-0316-48c2-a1bd-cbac28e60107" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icons/curved/Category.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icons/curved/Category.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/axios.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/data.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat/HeaderChat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/HeaderChat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/AvatarGroup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/AvatarGroup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chat/LastMessage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/LastMessage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Chat/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/Messages.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +111,7 @@
       <workItem from="1640965340867" duration="16493000" />
       <workItem from="1641053957072" duration="94000" />
       <workItem from="1641065475034" duration="2511000" />
-      <workItem from="1641094643891" duration="1002000" />
+      <workItem from="1641094643891" duration="2147000" />
     </task>
     <servers />
   </component>

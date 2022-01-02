@@ -5,9 +5,7 @@ import DotFlashing from "../common/DotFlashing";
 
 function LastMessage({lastMessage}) {
 
-    const senderName = lastMessage.sender.firstname
-        ? lastMessage.sender.firstname
-        : lastMessage.sender.lastname;
+    const senderName = lastMessage.sender.name.split(' ')[0];
 
     const imagesLength = lastMessage.content.media ? lastMessage.content.media.filter(e => e.type === "image").length : 0;
     const filesLength = lastMessage.content.media ? lastMessage.content.media.filter(e => e.type === "file").length : 0;

@@ -1,9 +1,4 @@
 import moment from "moment";
-import {messages} from "./data";
-
-const GetMessages = () => {
-    return messages
-}
 
 const GetInitial = (name, defaultValue = "AN") => {
     if (name) {
@@ -25,6 +20,5 @@ const dateToHour = (date) => {
 
 export {
     GetInitial,
-    dateToHour,
-    GetMessages
+    dateToHour
 }

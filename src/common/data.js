@@ -1,130 +1,7 @@
-const user1 = {
-    id: 1,
-    name: 'John Doe'
-}
-const user2 = {
-    id: 2,
-    name: 'Jennifer'
-}
-const user3 = {
-    id: 3,
-    name: 'scott'
-}
 const userConnected = {
     id: 4,
     name: 'Léo Glme',
     image: '/userPics/02m.jpg'
-}
-
-const messages = {
-    user: user1,
-    messages: [
-        {
-            id: 1,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 2,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 3,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 4,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 5,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 6,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 7,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 8,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 9,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 10,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 11,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 12,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 13,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 14,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 15,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 16,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 17,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 18,
-            receiver: user2,
-            sender: user1
-        },
-        {
-            id: 19,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 20,
-            receiver: user1,
-            sender: user2
-        },
-        {
-            id: 21,
-            receiver: user2,
-            sender: user1
-        }
-    ]
 }
 
 
@@ -149,13 +26,13 @@ const users = [
 
 const conversations = [
     {
+        id: 1,
         name: 'Andy',
         messages: [
             {
                 sender: {
                     id: 1,
-                    firstname: 'andy',
-                    lastname: 'beverly',
+                    name: 'andy beverly',
                     image: '/userPics/01m.jpg'
                 },
                 content: {
@@ -172,13 +49,13 @@ const conversations = [
         updated_at: '2021-12-18T08:32:00Z'
     },
     {
+        id: 2,
         name: 'Caterina',
         messages: [
             {
                 sender: {
                     id: 1,
-                    firstname: 'andy',
-                    lastname: 'beverly',
+                    name: 'andy beverly',
                     image: '/userPics/01w.jpg'
                 },
                 content: {
@@ -193,16 +70,74 @@ const conversations = [
         updated_at: '2021-12-18T08:32:00Z'
     },
     {
+        id: 3,
         name: 'Chat',
         messages: [
             {
                 sender: {
                     id: 1,
-                    firstname: 'andy',
-                    lastname: 'beverly'
+                    name: 'Scott',
+                    image: '/userPics/04m.jpg'
                 },
                 content: {
-                    message: "sure ! let's do it",
+                    message: "Hey guys! Have a great working week!",
+                    audio: null,
+                    media: null
+                },
+                isTyping: false
+            },
+            {
+                sender: {
+                    id: 2,
+                    name: 'Jennifer',
+                    image: '/userPics/05w.jpg'
+                },
+                content: {
+                    message: "Yo! I have a gret news for you all. Can i use voice message ?",
+                    audio: null,
+                    media: null
+                },
+                isTyping: false
+            },
+            {
+                sender: {
+                    id: 2,
+                    name: 'Jennifer',
+                    image: '/userPics/05w.jpg'
+                },
+                content: {
+                    message: null,
+                    audio: true,
+                    media: null,
+                },
+                isTyping: false
+            },
+            {
+                sender: {
+                    id: 2,
+                    name: 'Jennifer',
+                    image: '/userPics/05w.jpg'
+                },
+                content: {
+                    message: null,
+                    audio: null,
+                    media: [
+                        {
+                            type: 'image',
+                            url: '/media/media1.jpg'
+                        },
+                        {
+                            type: 'image',
+                            url: '/media/media2.jpg'
+                        }
+                    ]
+                },
+                isTyping: false
+            },
+            {
+                sender: userConnected,
+                content: {
+                    message: "I see you're really enjoying your holiday, it's great",
                     audio: null,
                     media: null
                 },
@@ -213,13 +148,13 @@ const conversations = [
         updated_at: '2021-12-18T08:32:00Z'
     },
     {
+        id: 4,
         name: 'likeastorm',
         messages: [
             {
                 sender: {
                     id: 1,
-                    firstname: 'andy',
-                    lastname: 'beverly',
+                    name: 'andy beverly',
                     image: '/userPics/02w.jpg'
                 },
                 content: {
@@ -256,6 +191,4 @@ const conversations = [
     }
 ]
 
-export {
-    messages, user1, user2, user3, conversations, userConnected, users
-}
+export {conversations, userConnected, users}
