@@ -56,6 +56,21 @@ code {
   margin-bottom: 0;
 }
 
+.conversation-title, .conversation-count {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.conversation-count {
+  font-size: 16px;
+}
+
+.conversation-title {
+  font-size: 17px;
+}
+
 .text-h6 {
   font-weight: 500;
   font-size: 18px;
@@ -212,7 +227,6 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .layout-left {
-  border-right: 2px solid #1c1d1f;
   min-width: 24vw;
   display: flex;
   flex-direction: column;
@@ -221,6 +235,7 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .layout-center {
+  border-left: 2px solid #1c1d1f;
   width: 100%;
 }
 

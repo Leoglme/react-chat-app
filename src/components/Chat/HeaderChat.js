@@ -15,10 +15,10 @@ function HeaderChat({title, users}) {
         <div className="chat-header">
             <div className='start'>
                 <Category/>
-                <h6 className="text-h6 ml-2 mr-1" style={{textTransform: 'capitalize'}}>
+                <h6 className="conversation-title ml-2 mr-1" style={{textTransform: 'capitalize'}}>
                     {title}
                 </h6>
-                <h6 className="text-h6 lighten" style={{fontWeight: 400}}>
+                <h6 className="conversation-count lighten" style={{fontWeight: 400}}>
                     24
                 </h6>
             </div>

@@ -16,7 +16,6 @@ const userConnected = {
     image: '/userPics/02m.jpg'
 }
 
-
 const messages = {
     user: user1,
     messages: [
@@ -129,6 +128,25 @@ const messages = {
 }
 
 
+const users = [
+    {
+        id: 1,
+        name: 'ingrid Krol',
+        image: '/userPics/03w.jpg'
+    },
+    {
+        id: 2,
+        name: 'Thomas Hayes',
+        image: '/userPics/03m.jpg'
+    },
+    {
+        id: 3,
+        name: 'colddecember',
+        image: '/userPics/04w.jpg'
+    }
+]
+
+
 const conversations = [
     {
         name: 'Andy',
@@ -239,5 +257,5 @@ const conversations = [
 ]
 
 export {
-    messages, user1, user2, user3, conversations, userConnected
+    messages, user1, user2, user3, conversations, userConnected, users
 }
