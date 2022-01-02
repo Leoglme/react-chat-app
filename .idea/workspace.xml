@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b5f82e-0316-48c2-a1bd-cbac28e60107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/svg/sound-wave.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/TimeCode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat/Message.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/Message.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Chat/Messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Chat/Messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/TimeCode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/TimeCode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/app.scss" afterDir="false" />
@@ -115,7 +112,7 @@
       <workItem from="1641053957072" duration="94000" />
       <workItem from="1641065475034" duration="2511000" />
       <workItem from="1641094643891" duration="2707000" />
-      <workItem from="1641147728317" duration="8248000" />
+      <workItem from="1641147728317" duration="8595000" />
     </task>
     <servers />
   </component>

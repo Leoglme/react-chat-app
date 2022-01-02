@@ -58,6 +58,9 @@ code {
 .text-white {
   color: #ffffff; }
 
+.bg-orange {
+  background: #fa734b !important; }
+
 .center, .start, .end, .space-between {
   display: flex;
   align-items: center; }
@@ -380,9 +383,9 @@ svg.lighten circle, svg.lighten path {
 
 .sound-wave {
   height: 40px;
-  width: 280px;
+  width: 180px;
   display: flex;
-  right: 55px;
+  right: 10px;
   position: relative;
   padding: 2px 0; }
   .sound-wave g {
