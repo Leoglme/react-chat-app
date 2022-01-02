@@ -191,4 +191,6 @@ const conversations = [
     }
 ]
 
-export {conversations, userConnected, users}
+const initialChat = conversations.find(e => e.id === 3);
+
+export {conversations, userConnected, users, initialChat}

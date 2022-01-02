@@ -3,10 +3,10 @@ import Messages from "./Chat/Messages";
 import HeaderChat from "./Chat/HeaderChat";
 import MessageField from "./Chat/MessageField";
 
-function ChatBox({users}) {
+function ChatBox({users, currentChat}) {
     return (<>
-        <HeaderChat users={users} title={"chat"}/>
-        <Messages/>
+        <HeaderChat users={users} title={currentChat.name}/>
+        <Messages currentChat={currentChat}/>
         <MessageField/>
     </>);
 }
