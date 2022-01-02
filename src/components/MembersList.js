@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import {GetUsers} from '../common'
+import React from 'react';
 import Spinner from "./common/Spinner";
 import {ReactComponent as MoreCircle} from '../assets/icons/curved/MoreCircle.svg';
 import {ReactComponent as Chat} from '../assets/icons/curved/Chat.svg';

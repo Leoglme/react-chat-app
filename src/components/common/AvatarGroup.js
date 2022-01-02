@@ -6,8 +6,9 @@ function AvatarGroup({max, children, size}) {
         <div className="avatar-group">
             {children.slice(0, max)}
             <div style={{
+                borderRadius: 45,
                 width: computeSize, height: computeSize,
-                fontSize: `calc(16px * ${computeSize} / 30)`
+                fontSize: `calc(14.5px * ${computeSize} / 30)`
             }}
                  className="avatar avatar-count">
                 <h5>+5</h5>
